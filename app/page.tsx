@@ -102,7 +102,7 @@ export default function EnchantingDateProposalApp() {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
-        src="https://media1.tenor.com/m/59regbBE_kwAAAAd/tkthao219-bubududu.gif"
+        src="https://media.tenor.com/adYqr_srXkQAAAAC/holding-hands.gif"
         alt="Cute bear proposal gif"
         className="w-full max-w-md mx-auto mb-4 rounded-lg shadow-lg"
       />
