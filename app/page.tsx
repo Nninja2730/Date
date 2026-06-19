@@ -21,7 +21,7 @@ import {
   SelectTrigger,
   SelectValue,
 } from "@/components/ui/select";
-import { Heart, Coffee, Film, Utensils, Clock } from "lucide-react";
+import { Heart, Coffee, Film, Utensils, Clock, Tv, Palette, ShoppingCart, Eye, MapPin, Sun } from "lucide-react";
 import confetti from "canvas-confetti";
 import ThemedCard from "@/components/ThemedCard";
 import Sparkles from "@/components/Sparkles";
@@ -270,38 +270,38 @@ export default function EnchantingDateProposalApp() {
      
     <motion.div key="step3" className="text-center" {...fadeInUp}>
       <h2 className="text-3xl font-semibold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-rose-500 to-pink-600">
-        What shall we watch together?
+        What shall we do after?
       </h2>
       <div className="grid grid-cols-2 gap-6 mb-6">
         {[
-          "The Notebook",
-          "La La Land",
-          "Titanic",
-          "Pride and Prejudice",
-          "Anyone But You",
-          "Past Lives",
-          "Love at First Sight",
-          "Through My Window 3",
-          "Something else",
+          { name: "Watch Obssession", icon: <Tv className="mx-auto mb-2" /> },
+          { name: "Artsy Date", icon: <Palette className="mx-auto mb-2" /> },
+          { name: "Shopping", icon: <ShoppingCart className="mx-auto mb-2" /> },
+          { name: "Watch Backrooms", icon: <Eye className="mx-auto mb-2" /> },
+          { name: "Picnic Date", icon: <MapPin className="mx-auto mb-2" /> },
+          { name: "Beach Date", icon: <Sun className="mx-auto mb-2" /> },
+          { name: "Lan Cafe", icon: <Coffee className="mx-auto mb-2" /> },
+          { name: "Watch Supergirl", icon: <Tv className="mx-auto mb-2" /> },
+          { name: "Something else", icon: <Film className="mx-auto mb-2" /> },
         ].map((movie) => (
           <motion.button
-            key={movie}
+            key={movie.name}
             whileHover={{ scale: 1.05 }}
             whileTap={{ scale: 0.95 }}
             className="bg-white text-pink-600 hover:bg-pink-100 font-bold py-4 px-6 rounded-lg shadow-md transition-colors duration-300"
             onClick={() => {
-              if (movie === "Something else") {
+              if (movie.name === "Something else") {
                 const customMovie = prompt(
-                  "What movie would you like to watch?"
+                  "What would you like to do after?"
                 );
                 if (customMovie) handleAnswer("movie", customMovie);
               } else {
-                handleAnswer("movie", movie);
+                handleAnswer("movie", movie.name);
               }
             }}
           >
-            <Film className="mx-auto mb-2" />
-            {movie}
+            {movie.icon}
+            {movie.name}
           </motion.button>
         ))}
       </div>
