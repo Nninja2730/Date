@@ -102,7 +102,7 @@ export default function EnchantingDateProposalApp() {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
-        src="https://media.tenor.com/adYqr_srXkQAAAAC/holding-hands.gif"
+        src="/holding-hands.gif"
         alt="Cute bear proposal gif"
         className="w-full max-w-md mx-auto mb-4 rounded-lg shadow-lg"
       />
@@ -166,7 +166,7 @@ export default function EnchantingDateProposalApp() {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
-        src="https://media.tenor.com/ZfyBe7eVjIgAAAAC/yume-nikki-yume-nikki-jumping.gif"
+        src="/yume-nikki-jumping.gif"
         alt="Excited bear gif"
         className="w-full max-w-md mx-auto mb-6 rounded-2xl shadow-2xl shadow-pink-300/30"
       />
@@ -370,7 +370,7 @@ export default function EnchantingDateProposalApp() {
         initial={{ opacity: 0, scale: 0.8 }}
         animate={{ opacity: 1, scale: 1 }}
         transition={{ duration: 0.5 }}
-        src="https://media.tenor.com/qslUlaGUdEwAAAAC/cinnamoroll-cute.gif"
+        src="/cinnamoroll-cute.gif"
         alt="Excited bear gif"
         className="w-full max-w-md mx-auto mb-6 rounded-2xl shadow-2xl shadow-pink-300/30"
       />
