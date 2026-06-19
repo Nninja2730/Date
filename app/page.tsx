@@ -237,11 +237,11 @@ export default function EnchantingDateProposalApp() {
       </h2>
       <div className="grid grid-cols-2 gap-4 md:gap-6 mb-8">
         {[
-          { name: "Lasagna", icon: <Utensils className="w-6 h-6" /> },
-          { name: "Chicken Pie", icon: <Utensils className="w-6 h-6" /> },
-          { name: "Chicken Shawarma", icon: <Utensils className="w-6 h-6" /> },
-          { name: "Snack Platter", icon: <Coffee className="w-6 h-6" /> },
-          { name: "Mix rice", icon: <Utensils className="w-6 h-6" /> },
+          { name: "Hotpot", icon: <Utensils className="w-6 h-6" /> },
+          { name: "Indian Food", icon: <Utensils className="w-6 h-6" /> },
+          { name: "Udon", icon: <Utensils className="w-6 h-6" /> },
+          { name: "Cookies & Desert", icon: <Coffee className="w-6 h-6" /> },
+          { name: "Sushi", icon: <Utensils className="w-6 h-6" /> },
         ].map(({ name, icon }) => (
           <SelectButton
             key={name}
